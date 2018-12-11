@@ -11,7 +11,9 @@ def looping_challenge_one():
         3
         ...
     """
-
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    for number in numbers:
+        print(number)
 
 def looping_challenge_two():
     """Given the variable colors_of_the_rainbow
