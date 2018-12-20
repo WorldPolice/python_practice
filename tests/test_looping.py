@@ -51,7 +51,7 @@ class TestLoopingChallengeThree(object):
         o = str(out).rstrip()
         observed = str(o).split('\n')
 
-        assert len(observed) >= 9, 'Nine new lines where not observed in stdout'
+        assert len(observed) >= 8, 'Nine new lines where not observed in stdout'
 
     def test_correct_number_order(self, capfd):
         """Test that the numbers appear in the correct order"""
