@@ -11,7 +11,7 @@ def looping_challenge_one():
         3
         ...
     """
-    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    numbers = range(1, 11)
     for number in numbers:
         print(number)
 
@@ -39,10 +39,10 @@ def looping_challenge_three():
     * Bonus points: accomplish this with only one list that contains only 4 elements
     """
 
-numbers = [1, 2, 3, 4]
-ascending = sorted(numbers)
-descending = sorted(numbers, reverse=True)
-for number in (ascending):
-    print(number)
-for number in (descending):
-    print(number)
+    numbers = [1, 2, 3, 4]
+    ascending = sorted(numbers)
+    descending = sorted(numbers, reverse=True)
+    for number in (ascending):
+        print(number)
+    for number in (descending):
+        print(number)
