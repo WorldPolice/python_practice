@@ -42,7 +42,7 @@ def looping_challenge_three():
     numbers = [1, 2, 3, 4]
     ascending = sorted(numbers)
     descending = sorted(numbers, reverse=True)
-    for number in (ascending):
+    for number in ascending:
         print(number)
-    for number in (descending):
+    for number in descending:
         print(number)
