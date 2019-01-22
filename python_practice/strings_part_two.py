@@ -8,7 +8,7 @@ def remove_trailing_whitespace_characters(string):
 
 
 def replace_with_your_name(your_name, madlib):
-    """In this challenge you will be givien a string in the argument 'madlib'
+    """In this challenge you will be given a string in the argument 'madlib'
     Inside this string you will see '<name>' please replace this with the contents of the
     variable 'your_name'.
     """

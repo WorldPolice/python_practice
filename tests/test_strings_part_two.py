@@ -6,7 +6,7 @@
 from python_practice.strings_part_two import *
 
 
-class TestCommaSeparatedStrings(object):
+class TestConcatListOfStrings(object):
 
     def test_three_strings(self):
         assert 'foobarbaz' == concat_list_of_strings(['foo', 'bar', 'baz'])
