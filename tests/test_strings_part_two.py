@@ -9,16 +9,16 @@ from python_practice.strings_part_two import *
 class TestCommaSeparatedStrings(object):
 
     def test_three_strings(self):
-        assert 'foo,bar,baz' == comma_separated_strings(['foo', 'bar', 'baz'])
+        assert 'foobarbaz' == concat_list_of_strings(['foo', 'bar', 'baz'])
 
     def test_one_string(self):
-        assert 'hello' == comma_separated_strings(['hello'])
+        assert 'hello' == concat_list_of_strings(['hello'])
 
     def test_empty_list(self):
-        assert '' == comma_separated_strings([])
+        assert '' == concat_list_of_strings([])
 
     def test_non_string_type(self):
-        assert comma_separated_strings(['hello', {'oops': 'bad'}]) is False
+        assert concat_list_of_strings(['hello', {'oops': 'bad'}]) == ''
 
 
 class TestSearchForSubstringsInList(object):
