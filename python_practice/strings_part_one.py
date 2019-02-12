@@ -7,17 +7,21 @@ def is_my_argument_a_string(maybe_string):
     if it is not a string object please return false.
     """
 
+    return isinstance(maybe_string, str)
+
 
 def concatonate_my_arguments(one, two, three):
     """In this challenge you need to concatenate all the arguments together and return the result
     The arguments will always be strings
     """
+    return one + two + three
 
 
 def all_numbers(maybe_string_with_numbers):
     """In this challenge you need to return true if all of the characters in 'maybe_string_with_numbers' are numbers
     if all of the characters in the string are not numbers please return false
     """
+    return str.isdigit(maybe_string_with_numbers)
 
 
 def substring_test(substring, string):
@@ -27,3 +31,4 @@ def substring_test(substring, string):
         substring = 'foo'
         string = 'foobar'
     """
+    return str.casefold(substring) in str.casefold(string)
